@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
     <%- include('imports'); -%>
-  </head>
-  <body>
-    <%- include('navbar'); -%>
-    
-    <div class="container">
-      <div class="row">
-        
-        <div class="post-detail">
-            <img src="/images/<%= post.image %>" />
-            <h1><%= post.title %></h1>
-            <p><%= post.body %></p>
-        </div>
-        
+</head>
 
-      </div>
-    </div>
+<body>
+    <%- include('banner'); -%>
+        <%- include('navbar'); -%>
 
-  </body>
+            <div class="container">
+                <div class="row">
+
+                    <div class="post-detail">
+                        <img src="/images/<%= post.image %>" />
+                        <h1>
+                            <%= post.title %>
+                        </h1>
+                        <p>
+                            <%= post.body %>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+</body>
+
 </html>
